@@ -472,18 +472,20 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_dialog_info" />
 
+
     <TextView
         android:id="@+id/Popup"
         android:layout_width="383dp"
         android:layout_height="500dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="68dp"
         android:background="#7F96A4"
         android:backgroundTint="#7F96A4"
         android:elevation="4dp"
         android:text="TextView"
         android:textAlignment="center"
         android:textColor="#000000"
+        android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:visibility="invisible" />
