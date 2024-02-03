@@ -44,4 +44,10 @@
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
     <string name="title_activity_dice_roller">DiceRoller</string>
+    <string name="race_info_text">
+        <![CDATA[
+        <b>Dwarf</b><br/><br/>
+        Dwarves are known as steadfast, sturdy beings, deeply rooted in ancient traditions and unyielding in the face of adversity. Emerging from their mighty mountain fortresses and deep underground halls, Dwarves are as enduring as the stone they carve. Renowned for their craftsmanship, their forges produce legendary weapons and armor, and their stonework is without parallel. Shorter in stature but strong and resilient, Dwarves possess a natural resistance to poison and magic, a testament to their hardiness. They are a people of honor and clan loyalty, valuing the bonds of family and tradition above all else. Dwarves are also famed for their stubbornness and tenacity, qualities that make them formidable warriors and tireless workers. Their long beards are a mark of pride, often intricately braided and adorned to signify clan and status. In battle, they are fierce and unyielding, and their deep connection to the earth gives them a unique perspective on the world around them. Dwarves embody the unbreakable spirit of the stone they hail from, steadfast allies and implacable foes.
+        ]]>
+    </string>
 </resources>
