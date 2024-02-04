@@ -1,19 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-    <fragment
-        android:id="@+id/nav_host_fragment_content_dice_roller"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:defaultNavHost="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+    <EditText
+        android:id="@+id/textView7"
+        android:layout_width="403dp"
+        android:layout_height="116dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/mystery_quest"
+        android:shadowColor="#000000"
+        android:shadowDx="-5"
+        android:shadowDy="0"
+        android:shadowRadius="1"
+        android:text="Dice Roller"
+        android:textAlignment="center"
+        android:textColor="#DC6FDE"
+        android:textSize="45sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:navGraph="@navigation/nav_graph2" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/D4Dice"
+        android:layout_width="124dp"
+        android:layout_height="122dp"
+        app:srcCompat="@drawable/d4_dice_numeral_transparent_blue__95122"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="334dp" />
+
+    <ImageButton
+        android:id="@+id/D6Dice"
+        android:layout_width="122dp"
+        android:layout_height="122dp"
+        app:srcCompat="@drawable/d6_transparent_blue_12mm__25246"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="334dp" />
+
+    <ImageButton
+        android:id="@+id/D8Dice"
+        android:layout_width="124dp"
+        android:layout_height="123dp"
+        app:srcCompat="@drawable/d8_scarab_royal_blue_dice2_1000x1000_1200x1200"
+        tools:layout_editor_absoluteX="283dp"
+        tools:layout_editor_absoluteY="333dp" />
+
+    <ImageButton
+        android:id="@+id/D10PercentDice"
+        android:layout_width="128dp"
+        android:layout_height="124dp"
+        app:srcCompat="@drawable/d10_scarab_dice_percent_royal_blue__52014"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="603dp" />
+
+    <ImageButton
+        android:id="@+id/D10Dice"
+        android:layout_width="123dp"
+        android:layout_height="123dp"
+        app:srcCompat="@drawable/d10_dice_transparent_blue__75744"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="468dp" />
+
+    <ImageButton
+        android:id="@+id/D12Dice"
+        android:layout_width="124dp"
+        android:layout_height="123dp"
+        app:srcCompat="@drawable/d12_dice_transparent_blue__65001"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="468dp" />
+
+    <ImageButton
+        android:id="@+id/D20Dice"
+        android:layout_width="124dp"
+        android:layout_height="121dp"
+        app:srcCompat="@drawable/d20_dice_transparent_blue"
+        tools:layout_editor_absoluteX="283dp"
+        tools:layout_editor_absoluteY="468dp" />
+
+    <TextView
+        android:id="@+id/DiceRolled"
+        android:layout_width="135dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="188dp"
+        android:shadowColor="#000000"
+        android:shadowDx="-8"
+        android:shadowDy="0"
+        android:shadowRadius="1"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#DE6F9E"
+        android:textSize="50sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
