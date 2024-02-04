@@ -1,13 +1,13 @@
 package com.example.charactercreatortest
 
-import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
+import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.charactercreatortest.databinding.ActivityCharacterSheetBinding
+import com.google.android.material.snackbar.Snackbar
 
 class CharacterSheet : AppCompatActivity() {
 
@@ -20,15 +20,16 @@ class CharacterSheet : AppCompatActivity() {
         binding = ActivityCharacterSheetBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val buttonClick = findViewById<Button>(R.id.more_info_cs)
-        buttonClick.setOnClickListener {
-            val intent = Intent(this, character_sheet_2::class.java)
-            startActivity(intent) }
+        setSupportActionBar(binding.toolbar)
 
-        val buttonClick2 = findViewById<Button>(R.id.back_cs)
-        buttonClick2.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent) }
+        val navController = findNavController(R.id.nav_host_fragment_content_character_sheet)
+        appBarConfiguration = AppBarConfiguration(navController.graph)
+        setupActionBarWithNavController(navController, appBarConfiguration)
+
+        binding.fab.setOnClickListener { view ->
+            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                .setAction("Action", null).show()
+        }
     }
 
     override fun onSupportNavigateUp(): Boolean {

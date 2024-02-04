@@ -1,7 +1,10 @@
 package com.example.charactercreatortest
 
+import android.annotation.SuppressLint
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
+import android.text.method.ScrollingMovementMethod
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.ImageButton
@@ -23,7 +26,25 @@ class MainActivity : AppCompatActivity() {
     private var alignment = arrayOf<String?>("Lawful Good", "Neutral Good", "Chaotic Good", "Lawful Neutral", "True Neutral",
         "Chaotic Neutral", "Lawful Evil", "Neutral Evil", "Chaotic Evil")
     private var playerLevel = arrayOf<String?>("Beginner", "Average", "Advanced")
+    private var playerNames = arrayOf<String?>("Raya", "Onyx", "Inga", "Ender", "Electra", "Kodiak", "Polaris", "Cosmo", "Lotus", "Rigel", "Siara", "Lux",
+            "Gemini", "Creed", "Isis", "Zephyr", "Xara", "Kano", "Lumina", "Xerxes", "Neo", "Skai", "Merlin", "Arcadia", "Wilder", "Luma", "Astro", "Vega",
+            "Calxy", "Xoey", "Geo", "Atara", "Solaris", "Kodi", "Lynx", "Octavia", "Krew", "Enzo",
+            "Eloise", "Sevyn", "Blaise", "Sasha", "Reya", "Reno", "Flynt", "Chyna", "Helios", "Calliope", "Blaze", "Alara", "Kai", "Saffire", "Jett", "Elektra",
+            "Xeno", "Zenia", "Solar", "Zeta", "Xzander",
+            "Bexley", "Zeno", "Freya", "Zeke", "Ember", "Felix", "Xiomara", "Loki", "Capri", "Sirius", "Vesper", "Pax", "Wisteria", "Lazar", "Wynter",
+            "Ezekiel", "Kassius", "Nikita", "Cortez", "Araceli",
+            "Raiden", "Zora", "Zayne", "Maya", "Kairo", "Sierra", "Ryu", "Athena", "Maverick", "Astoria", "Xion", "Siena", "Cato", "Stormi",
+            "Zen", "Ekaterina", "Killian", "Astrid", "Axton", "Azura", "Xavior",
+            "Skyla", "Dax", "Ripley", "Rex", "Venus", "Ryker", "Kira", "Ajax", "Signe", "Calixto", "Sora", "Keanu", "Sacha", "Zain", "Xenia", "Dante",
+            "Xia", "Blade", "Zofia", "Zander", "Xiamara", "Ulysses", "Klara",
+            "Phoenix", "Katara", "Blaise", "Kali", "Lynk", "Sia", "Jayceon", "Zia", "Helix", "Hawke", "Zelda", "Blayze", "Kylo", "Starla", "Genesis", "Delta",
+            "Ryden", "Xena", "Klay", "Lexi", "Kaige", "Cisco",
+            "Shyla", "Zenon", "Trinity", "Cyprian", "Valkyrie", "Acer", "Roxi", "Saber", "Elyse", "Kyo", "Solara", "Sirena", "Sixtus",
+            "Saskia", "Loxo", "Cosmia", "Scipio", "Aeryn", "Condor", "Zhora",
+            "Quatro", "Kitanna", "Scorpio", "Elaxa", "Xenon", "Sixta", "Loko", "Wylda", "Zio", "Zolton", "Calyxtra", "Sirocco", "Olexa", "Six", "Exton",
+            "Zuzana", "Salix", "Lexxy", "Falco", "Santara", "Xannon", "Snoh", "Indio", "Azure", "Kannon", "Jimothy")
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -32,13 +53,14 @@ class MainActivity : AppCompatActivity() {
         val popUpBox: TextView = findViewById(R.id.Popup)
         popUpClose.isVisible = false
         popUpBox.isVisible = false
+        popUpBox.movementMethod = ScrollingMovementMethod()
 
         //the button for information about the different races
         val raceInfoButton: ImageButton = findViewById(R.id.RaceInfo)
         raceInfoButton.setOnClickListener {
             popUpClose.isVisible = true
             popUpBox.isVisible = true
-            popUpBox.setText("Race \n\n This is where the information about the races you can select goes")
+            popUpBox.setText("Race \n\n This is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goesThis is where the information about the races you can select goes")
         }
 
         //the button for information about the different classes
@@ -136,6 +158,43 @@ class MainActivity : AppCompatActivity() {
             rollStats()
         }
 
+        //Back Button to return to the title screen
+        val backButton: ImageButton = findViewById(R.id.backButton)
+
+        backButton.setOnClickListener {
+            val i = Intent(this, Title::class.java)
+            startActivity(i)
+        }
+
+        //Randomize the character
+        val randomButton: ImageButton = findViewById(R.id.randomizeButton)
+
+        randomButton.setOnClickListener {
+            val nameBox: TextView = findViewById(R.id.NameText)
+            val raceBox = findViewById<Spinner>(R.id.RaceSpinner)
+            val classBox = findViewById<Spinner>(R.id.ClassSpinner)
+            val alignmentBox = findViewById<Spinner>(R.id.AlignmentSpinner)
+            val name1 = (1..playerNames.size).random()
+            val name2 = (1..playerNames.size).random()
+            val race = (1..races.size).random()
+            val class1 = (1..classes.size).random()
+            val allignment = (1..alignment.size).random()
+            nameBox.setText(playerNames[name1 - 1] + " " + playerNames[name2 - 1])
+            raceBox.setSelection(race - 1)
+            classBox.setSelection(class1 - 1)
+            alignmentBox.setSelection(allignment - 1)
+            rollStats()
+        }
+        val randomNameButton: ImageButton = findViewById(R.id.randomizeNameButton)
+
+        randomNameButton.setOnClickListener {
+            val nameBox: TextView = findViewById(R.id.NameText)
+            val name1 = (1..playerNames.size).random()
+            val name2 = (1..playerNames.size).random()
+            nameBox.setText(playerNames[name1 - 1] + " " + playerNames[name2 - 1])
+        }
+
+
         //Save button for saving a created character to your phone
         val saveButton: Button = findViewById(R.id.save)
 
@@ -217,12 +276,12 @@ class MainActivity : AppCompatActivity() {
             }
             raceBox.setSelection(position)
             for((index, value) in classes.withIndex()){
-                if(lineList[1] == value)
+                if(lineList[2] == value)
                     position = index
             }
             classBox.setSelection(position)
             for((index, value) in alignment.withIndex()){
-                if(lineList[1] == value)
+                if(lineList[3] == value)
                     position = index
             }
             alignmentBox.setSelection(position)
