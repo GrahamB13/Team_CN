@@ -4,33 +4,124 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#476A7D"
     android:fitsSystemWindows="true"
     tools:context=".DiceRoller">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fitsSystemWindows="true">
+    <EditText
+        android:id="@+id/textView7"
+        android:layout_width="403dp"
+        android:layout_height="116dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/mystery_quest"
+        android:shadowColor="#000000"
+        android:shadowDx="-5"
+        android:shadowDy="0"
+        android:shadowRadius="1"
+        android:text="Dice Roller"
+        android:textAlignment="center"
+        android:textColor="#DC6FDE"
+        android:textSize="45sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+    <ImageButton
+        android:id="@+id/D4Dice"
+        android:layout_width="124dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="332dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/d4_dice_numeral_transparent_blue__95122" />
 
-    </com.google.android.material.appbar.AppBarLayout>
+    <ImageButton
+        android:id="@+id/D6Dice"
+        android:layout_width="122dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="332dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/d6_transparent_blue_12mm__25246" />
 
-    <include
-        layout="@layout/content_dice_roller"
-        android:layout_width="214dp"
-        android:layout_height="340dp" />
+    <ImageButton
+        android:id="@+id/D8Dice"
+        android:layout_width="124dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="332dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/d8_scarab_royal_blue_dice2_1000x1000_1200x1200" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_marginEnd="@dimen/fab_margin"
-        android:layout_marginBottom="16dp"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+    <ImageButton
+        android:id="@+id/D10PercentDice"
+        android:layout_width="128dp"
+        android:layout_height="124dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="608dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/d10_scarab_dice_percent_royal_blue__52014" />
+
+    <ImageButton
+        android:id="@+id/D10Dice"
+        android:layout_width="123dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="468dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/d10_dice_transparent_blue__75744" />
+
+    <ImageButton
+        android:id="@+id/D12Dice"
+        android:layout_width="124dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="468dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/d12_dice_transparent_blue__65001" />
+
+    <ImageButton
+        android:id="@+id/D20Dice"
+        android:layout_width="124dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="468dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/d20_dice_transparent_blue" />
+
+    <TextView
+        android:id="@+id/DiceRolled"
+        android:layout_width="135dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="188dp"
+        android:shadowColor="#000000"
+        android:shadowDx="-8"
+        android:shadowDy="0"
+        android:shadowRadius="1"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#DE6F9E"
+        android:textSize="50sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="43dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="700dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

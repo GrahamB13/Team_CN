@@ -1,7 +1,9 @@
 package com.example.charactercreatortest
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
+import android.text.method.ScrollingMovementMethod
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.ImageButton
@@ -211,6 +213,7 @@ class MainActivity : AppCompatActivity() {
 
         backButton.setOnClickListener {
             val i = Intent(this, Title::class.java)
+            //val i = Intent(this, CharacterSheet::class.java)
             startActivity(i)
         }
 

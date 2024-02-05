@@ -36,7 +36,6 @@
         android:shadowDy="0"
         android:shadowRadius="1"
         android:text="By Team Chaotic Neutral"
-
         android:textAlignment="center"
         android:textColor="#DE6F9E"
         android:textSize="24sp" />
@@ -49,6 +48,7 @@
         android:layout_marginTop="475dp"
         android:foreground="@drawable/button"
         android:textColor="#000000"
+        android:contentDescription="Takes you to the character creator"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -60,6 +60,7 @@
         android:layout_marginTop="550dp"
         android:foreground="@drawable/button"
         android:textColor="#000000"
+        android:contentDescription="Takes you to the character sheet"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -70,7 +71,7 @@
         android:layout_marginStart="110dp"
         android:layout_marginTop="625dp"
         android:foreground="@drawable/button"
-        android:textColor="#000000"
+        android:contentDescription="Takes you to the dice roller"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <TextView

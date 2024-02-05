@@ -24,7 +24,13 @@
             android:theme="@style/Theme.CharacterCreatorTest" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="false"
+            />
+        <activity
+            android:name=".Title"
+            android:exported="true"
+            android:label="@string/title_activity_title"
+            android:theme="@style/Theme.CharacterCreatorTest" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
